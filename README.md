@@ -1,5 +1,5 @@
 # SWDE-Dataset
-Mirror for SWDE dataset
+This repo is a mirror for the SWDE dataset
 
 # Paper
 [From One Tree to a Forest: a Unified Solution forStructured Web Data Extraction](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/StructedDataExtraction_SIGIR2011.pdf)
@@ -57,6 +57,7 @@ Each remaining line stores the ground-truth information (separated by TABs) of o
 The ground-truth labeling was conducted in the DOM-node level. More specifically, the candidate attribute values in a web page are the non-empty strings contained in text nodes in the corresponding DOM tree. One page (although containing a single data record) may contain multiple distinct values that correspond to an attribute (e.g., multiple authors of a book, multiple granularity levels of addresses). Currently, when a text node presents a mixture of multiple attributes, its string value is labeled with each of these attributes, if no substitute is available. Before being stored in .txt files, the raw attribute values were refined by removing redundant separators (e.g., ' ', '\t', '\n').
 Reference
 
+# Citing this work
 The authors would appreciate it if you cite the following paper when using the dataset:
 ```
 Qiang Hao, Rui Cai, Yanwei Pang, and Lei Zhang. "From One Tree to a Forest: a Uniﬁed Solution for Structured Web Data Extraction". in Proc. of the 34th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2011), pp.775-784, Beijing, China. July 24-28, 2011.
