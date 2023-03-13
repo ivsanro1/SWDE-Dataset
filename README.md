@@ -65,5 +65,9 @@ Qiang Hao, Rui Cai, Yanwei Pang, and Lei Zhang. "From One Tree to a Forest: a Un
 
 # Notes
 Year: 2011
-URL: https://swde.codeplex.com/
+
+Original URL: https://swde.codeplex.com/
+
+# License
+
 License: No license specified, the work may be protected by copyright.
