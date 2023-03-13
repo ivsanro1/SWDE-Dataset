@@ -9,9 +9,17 @@ Mirror for SWDE dataset
 This dataset is a real-world web page collection used for research on the automatic extraction of structured data (e.g., attribute-value pairs of entities) from the Web. We hope it could serve as a useful benchmark for evaluating and comparing different methods for structured web data extraction.
 Contents of the Dataset
 
-Currently the dataset involves:
+# Contents of the dataset
 
-8 verticals with diverse semantics; 80 web sites (10 per vertical); 124,291 web pages (200 ~ 2,000 per web site), each containing a single data record with detailed information of an entity; 32 attributes (3 ~ 5 per vertical) associated with carefully labeled ground-truth of corresponding values in each web page. The goal of structured data extraction is to automatically identify the values of these attributes from web pages. The involved verticals are summarized as follows:
+- 8 verticals with diverse semantics;
+- 80 web sites (10 per vertical);
+- 124,291 web pages (200 ~ 2,000 per web site), each containing a single data record with detailed information of an entity;
+- 32 attributes (3 ~ 5 per vertical) associated with carefully labeled ground-truth of corresponding values in each web page.
+
+The goal of structured data extraction is to automatically identify the values of these attributes from web pages.
+The involved verticals are summarized as follows:
+
+```
 Vertical 	#Sites 	#Pages 	#Attributes 	Attributes
 Auto 	10 	17,923 	4 	model, price, engine, fuel_economy
 Book 	10 	20,000 	5 	title, author, isbn_13, publisher, publication_date
@@ -21,7 +29,9 @@ Movie 	10 	20,000 	4 	title, director, genre, mpaa_rating
 NBA Player 	10 	4,405 	4 	name, team, height, weight
 Restaurant 	10 	20,000 	4 	name, address, phone, cuisine
 University 	10 	16,705 	4 	name, phone, website, type
-Format of Web Pages
+```
+
+$ Format of Web Pages
 
 Each web page in the dataset is stored as one .htm file (in UTF-8 encoding) where the first tag encodes the source URL of the page.
 Format of Ground-truth Files
@@ -33,10 +43,10 @@ The first line stores the names of vertical, site, and attribute, separated by T
 
 The second line stores some statistics (separated by TABs) w.r.t. the corresponding site and attribute, including:
 
-    the total number of pages,
-    the number of pages containing attribute values,
-    the total number of attribute values contained in the pages,
-    the number of unique attribute values.
+- the total number of pages,
+- the number of pages containing attribute values,
+- the total number of attribute values contained in the pages,
+- the number of unique attribute values.
 
 Each remaining line stores the ground-truth information (separated by TABs) of one page, in sequence of: *page ID, *the number of attribute values in the page, *attribute values ("<NULL>" in case of non-existence).
 
