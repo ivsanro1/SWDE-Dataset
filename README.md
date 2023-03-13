@@ -19,19 +19,20 @@ Contents of the Dataset
 The goal of structured data extraction is to automatically identify the values of these attributes from web pages.
 The involved verticals are summarized as follows:
 
-```
-Vertical 	#Sites 	#Pages 	#Attributes 	Attributes
-Auto 	10 	17,923 	4 	model, price, engine, fuel_economy
-Book 	10 	20,000 	5 	title, author, isbn_13, publisher, publication_date
-Camera 	10 	5,258 	3 	model, price, manufacturer
-Job 	10 	20,000 	4 	title, company, location, date_posted
-Movie 	10 	20,000 	4 	title, director, genre, mpaa_rating
-NBA Player 	10 	4,405 	4 	name, team, height, weight
-Restaurant 	10 	20,000 	4 	name, address, phone, cuisine
-University 	10 	16,705 	4 	name, phone, website, type
-```
 
-$ Format of Web Pages
+| Vertical   | #Sites | #Pages | #Attributes | Attributes                                          |
+|------------|--------|--------|-------------|-----------------------------------------------------|
+| Auto       | 10     | 17,923 | 4           | model, price, engine, fuel_economy                  |
+| Book       | 10     | 20,000 | 5           | title, author, isbn_13, publisher, publication_date |
+| Camera     | 10     | 5,258  | 3           | model, price, manufacturer                          |
+| Job        | 10     | 20,000 | 4           | title, company, location, date_posted               |
+| Movie      | 10     | 20,000 | 4           | title, director, genre, mpaa_rating                 |
+| NBA Player | 10     | 4,405  | 4           | name, team, height, weight                          |
+| Restaurant | 10     | 20,000 | 4           | name, address, phone, cuisine                       |
+| University | 10     | 16,705 | 4           | name, phone, website, type                          |
+
+
+# Format of Web Pages
 
 Each web page in the dataset is stored as one .htm file (in UTF-8 encoding) where the first tag encodes the source URL of the page.
 Format of Ground-truth Files
