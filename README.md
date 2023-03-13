@@ -17,6 +17,7 @@ Contents of the Dataset
 - 32 attributes (3 ~ 5 per vertical) associated with carefully labeled ground-truth of corresponding values in each web page.
 
 The goal of structured data extraction is to automatically identify the values of these attributes from web pages.
+
 The involved verticals are summarized as follows:
 
 
@@ -37,7 +38,7 @@ The involved verticals are summarized as follows:
 Each web page in the dataset is stored as one .htm file (in UTF-8 encoding) where the first tag encodes the source URL of the page.
 Format of Ground-truth Files
 
-For each web site, the page-level ground-truth of attribute values has been labeled using handcrafted regular expressions and stored in .txt files (in UTF-8 encoding) named as: "<vertical>-<site>-<attribute>.txt".
+For each web site, the page-level ground-truth of attribute values has been labeled using handcrafted regular expressions and stored in .txt files (in UTF-8 encoding) named as: `<vertical>-<site>-<attribute>.txt`.
 In each such file:
 
 The first line stores the names of vertical, site, and attribute, separated by TAB characters ('\t').
